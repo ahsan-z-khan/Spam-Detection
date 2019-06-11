@@ -223,6 +223,7 @@ if __name__ == "__main__":
 
     print("10-fold cross-validation mean AUC: ",
           np.mean(aucCV(features,labels)))       
+          
     #split the dataset to test and training data
     trainFeatures, testFeatures, trainLabels, testLabels =train_test_split (features, labels, test_size=0.2)    
     print("Test set AUC: ", aucTest(trainFeatures,trainLabels,testFeatures,
